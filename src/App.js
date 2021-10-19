@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import UseStateDemo from './hooks/UseStateDemo';
+import UseReducerDemo from './hooks/UseReducerDemo';
+import UseEffectDemo from './hooks/UseEffectDemo';
+import UseLayoutEffectDemo from './hooks/UseLayoutEffectDemo';
+import UseRefDemo from './hooks/UseRefDemo';
+import UseImperativeHandleDemo from './hooks/UseImperativeHandleDemo';
+import UseContextDemo from './hooks/UseContextDemo';
+import UseMemoDemo from './hooks/UseMemoDemo';
+import UseCallbackDemo from './hooks/UseCallbackDemo';
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => ( 
+  <div className="App">
+    <UseCallbackDemo/>
+    <UseMemoDemo/>
+    <UseEffectDemo/>
+    <UseContextDemo/>
+    <UseImperativeHandleDemo/>
+    <UseLayoutEffectDemo/>
+    <UseRefDemo/>
+    <UseStateDemo/>
+    <UseReducerDemo/>
+  </div>
+);  
 
 export default App;
